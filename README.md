@@ -1,8 +1,13 @@
 
+ROS2 Humble Dev Container Workspace
+
+Development Environment for ROS2 Humble + Ubuntu 22.04 + Foxglove Studio + Colcon
+
+This repository contains a Dev Container that sets up a ROS2 Humble development environment inside VS Code. It includes ROS 2 Humble, Foxglove Studio, and a ready to use workspace structure.
 
 INSTALLATION INSTRUCTIONS
 
-**1. Install Docker Engine (Ubuntu 24.04)**  
+**Install Docker Engine (Ubuntu 24.04)**  
     
     sudo apt update
     sudo apt install -y ca-certificates curl gnupg lsb-release
@@ -27,18 +32,18 @@ Add your user to docker group:
 
 Reboot.
 
-**2. Clone the repository.**
+**Clone the repository.**
     
     ```
     git clone https://github.com/OscarAntG/ROS2_Humble_Devcontainer.git dw_ros2_ws
     cd dw_ros2_ws
     ```
 
-**3. Install the VS Code Dev Container extension**
+**Install the VS Code Dev Container extension**
 Open VS Code
 Install: Dev Containers (ms-vscode-remote.remote-containers)
 
-**4. Open the project in VS Code**
+**Open the project in VS Code**
     
     ```
     code ~/dw_ros2_ws
