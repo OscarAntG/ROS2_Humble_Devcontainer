@@ -1,0 +1,36 @@
+{
+  "name": "ROS2 Humble Dev Container",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
+  "runArgs": [
+    "--net=host",
+    "--ipc=host",
+    "--privileged",
+    "-e", "DISPLAY=${env:DISPLAY}",
+    "-v", "/tmp/.X11-unix:/tmp/.X11-unix",
+    "-v", "/dev:/dev"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-extension-pack",
+        "ms-vscode.cpptools-themes",
+        "twxs.cmake",
+        "ms-vscode.cmake-tools",
+        "ms-python.vscode-pylance",
+        "ms-python.python",
+        "ms-python.debugpy",
+        "ranch-hand-robotics.rde-ros-2",
+        "ranch-hand-robotics.rde-pack"
+      ]
+    }
+  },
+  "remoteUser": "dev",
+  "mounts": [
+    "type=bind,source=${localWorkspaceFolder}/src,target=/home/dev/ros2_ws/src"
+  ],
+  "workspaceFolder": "/home/dev/ros2_ws"
+}
