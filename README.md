@@ -34,10 +34,10 @@ Reboot.
 
 **Clone the repository.**
     
-    ```
+    
     git clone https://github.com/OscarAntG/ROS2_Humble_Devcontainer.git dw_ros2_ws
     cd dw_ros2_ws
-    ```
+    
 
 **Install the VS Code Dev Container extension**
 
@@ -46,9 +46,9 @@ Install: Dev Containers (ms-vscode-remote.remote-containers)
 
 **Open the project in VS Code**
     
-    ```
+    
     code ~/dw_ros2_ws
-    ```
+    
 
 Select "Reopen in container" on the bottom right prompt in VS Code.
 You're now inside your dev environment.
