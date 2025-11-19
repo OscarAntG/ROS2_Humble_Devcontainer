@@ -40,6 +40,7 @@ Reboot.
     ```
 
 **Install the VS Code Dev Container extension**
+
 Open VS Code
 Install: Dev Containers (ms-vscode-remote.remote-containers)
 
